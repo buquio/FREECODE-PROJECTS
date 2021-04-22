@@ -1,0 +1,162 @@
+
+
+/* 
+  color: #A5B2D3;
+  background: #39445F; dark1 -panel/section
+  background: #303A52;   dark2-body
+  color: #A5B2D3; text-color
+  background: #FC85AE; bth 
+  background: #2C354A;  dark3 -panel/side-nav  
+  color: white;  h1
+  color: #FC85AE;  h3
+ */
+
+body, html {
+  color: #A5B2D3;
+  font-family: Raleway, sans-serif;
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  font-size: 1.2em;
+  background: #2C354A;
+  background-image: linear-gradient(rgba(76, 76, 126, 0.4),rgba(92, 92, 146, 0.4)),
+    url(https://thumbs.dreamstime.com/b/african-university-students-group-happy-looking-camera-52803479.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 2.5rem;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 2rem;
+  color: #FC85AE;
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  
+}
+
+
+.container {
+  background-color: #39445F;
+  border-radius: 10px;
+  margin: auto;
+  width: 60%;
+  padding: 1em;
+  
+}
+
+.heading {
+  width: 80%;
+  margin: 30px auto;
+  padding: 10px;
+}
+
+#survey-form {
+  padding: 10px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.labels {
+  text-align: right;
+  display: inline-block;
+  width: 40%;
+  vertical-align: top;
+  margin-top: 20px;
+}
+
+.input-box {
+  width: 50%;
+  margin-left: 15px;
+  display: inline-block;
+  text-align: left;
+  
+}
+
+.input-item {
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: bold;
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  margin: 20px 0 0 10px;
+  border: 1px solid #FC85AE;
+  border-radius: 5px;
+}
+
+input {
+  margin: 10px;
+}
+
+#dropdown {
+  margin: 20px 0 10px 10px; 
+  border: 1px solid #FC85AE;
+  width: 100%;
+  padding: 5px;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 15px;
+}
+.btn {
+  text-align: center;
+  width: 100%;
+  margin: 20px;
+}
+
+button {
+  font-size: 1em;
+  font-weight: bold;
+  background-color: #ed5389;
+  border-radius: 4px;
+  color: white;
+  padding: 10px 15px;
+  border: 2px solid white;
+}
+
+button:hover {
+  background-color: #ca6e8e;
+}
+
+
+@media (max-width: 768px) { /* 768 & above i.e ipad */
+  
+  h1 {
+    font-size: 3em;
+  }
+  
+  .labels {
+    width: 100%;
+    text-align: left;
+  }
+  .input-box {
+    width: 100%;
+    float: left;
+    margin-left: -10px;
+  }
+  .input-item {
+    width: 100%;
+  }
+  select {
+    width: 100%;
+  }
+  .btn {
+    width: 100%;
+    margin: auto;
+  }
+}

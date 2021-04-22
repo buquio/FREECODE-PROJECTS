@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<header>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet"> 
+<link href="style.css" rel="stylesheet">
+</header>
+<body>
+        <div class="heading">
+          <h1 id="title">University of Kane Survey Form</h1>
+            <p id="description">Tell us your view about the university</p>
+        </div>
+          <div class="container">
+            <form id="survey-form">
+      
+               <div class="labels">
+                <label id="name-label" for="name">Student Name</label>
+              </div>
+              <div class="input-box">
+                <input class="input-item" type="text" id="name" name="name" placeholder="Enter your name" required autofocus>
+              </div>
+      
+               <div class="labels">
+                <label id="email-label" for="email"> Email</label>
+              </div>
+              <div class="input-box">
+                <input class="input-item" type="email" id="email" name="email" placeholder="Enter your name" required>
+              </div>
+              
+               <div class="labels">
+                <label id="number-label" for="number"> Age</label>
+              </div>
+              <div class="input-box">
+                <input class="input-item" type="number" id="number" name="number" min="1" max="120" placeholder="Age" required>
+              </div>
+      
+                
+               <div class="labels">
+                <label for="dropdown">How long have you been a student here?</label>
+              </div>
+              <div class="input-box">
+                <select id="dropdown" name="duraion" required>
+                  <option disabled value selected>Please Select </option>
+                  <option value="less-a-month">Less than a month</option>
+                  <option value="1-6months">1-6 months</option>
+                  <option value="6months-to-1year">6 months to 1 year</option>
+                  <option value="more-than-1year">More than 1 year</option>
+                  <option value="1-3 years">1-3 years</option>
+                  <option value="more-than-3years">More than 3 years</option>
+                </select>
+                </div>
+              
+              <div class="labels">
+                <label>Do you agree that the overall quality of the classes was excellent.?</label></div>
+              <div class="input-box">
+                  <input type="radio" name="radio-button" value="Disagree">Disagree<br>
+                  <input type="radio" name="radio-button" value="Neutral">Neutral<br>
+                  <input type="radio" name="radio-button" value="Agree">Agree<br>
+              </div>
+              
+              <div class="labels">
+                <label for="dropdown">How likely are you to recommend our school to a friend or colleague?</label></div>
+              <div class="input-box">
+                <select id="dropdown" name="recommend">
+                  <option disabled value selected>Please Select</option>
+                  <option value="very-likely">Very likely</option>
+                  <option value="neutral">Neutral</option>
+                  <option value="not-likely">Not likely</option>
+                </select>
+              </div>
+              
+              <div class="labels">
+                <label>What could we do to increase your level of satisfaction?</label></div>
+              <div class="input-box">
+                <input type="checkbox" name="Library" value="alone">Library and on-site computers consistently made available.<br>
+                <input type="checkbox" name="goals" value="fr">The school communicated institutional goals and relevant news to students.	<br>
+                <input type="checkbox" name="qualified" value="fam">The instructors were qualified to teach these classes.	<br>
+                <input type="checkbox" name="available" value="fam">The instructors were available and helpful to students outside of class.	<br>
+                <input type="checkbox" name="tests" value="other">Tests and assignments were based on material covered in each class.	<br>
+              </div>        
+              
+              <div class="labels">
+                <label for="comments">Additional comments </label></div>
+              <div class="input-box">
+                <textarea class="input-item" id="comments" name="comments" rows="10" cols="40" placeholder="Your comments..."></textarea></div>
+              
+              <div class="btn">
+                <button id="submit" type="submit">Submit</button>
+              </div>
+              
+            </form>
+          </div>
+
+        </body> 
+</html>>
