@@ -3,7 +3,7 @@
 :root {
   --color-white: #f3f3f3;
   --color-darkblue: #1b1b32;
-  --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+  --color-darkblue-alpha: #1b1b32cc;
   --color-green: #37af65;
 }
 
@@ -58,11 +58,34 @@ p {
   margin-bottom: 0.5rem;
 }
 
-label {
-  display: flex;
-  align-items: center;
-  font-size: 1.125rem;
-  margin-bottom: 0.5rem;
+button {
+  border: none;
+}
+
+.container {
+  width: 100%;
+  margin: 3.125rem auto 0 auto;
+}
+/* header  */
+.header {
+  padding: 0 0.625rem;
+  margin-bottom: 1.875rem;
+}
+
+.description {
+  font-style: italic;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.text-center {
+  text-align: center;
+}
+/* form */
+form {
+  background: var(--color-darkblue-alpha);
+  padding: 2.5rem 0.625rem;
+  border-radius: 0.25rem;
 }
 
 input,
@@ -75,20 +98,11 @@ textarea {
   line-height: inherit;
 }
 
-button {
-  border: none;
-}
-
-.container {
-  width: 100%;
-  margin: 3.125rem auto 0 auto;
-}
-
-
-@media (min-width: 480px) {  /* 480 & above */
-  form {
-    padding: 2.5rem;
-  }
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
 }
 
 .form-group {
@@ -113,6 +127,12 @@ button {
   border-color: #80bdff;
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.clue {
+  margin-left: 0.25rem;
+  font-size: 0.9rem;
+  color: #e4e4e4;
 }
 
 .input-radio,
@@ -143,6 +163,13 @@ button {
 
 
 
+/* note: the above will be for 0px & above 479px */
+@media (min-width: 480px) {  /* 480 & above */
+  form {
+    padding: 2.5rem;
+  }
+}
+
 @media (min-width: 576px) {  /* 576 & above */
   .container {
     max-width: 540px;
@@ -154,33 +181,3 @@ button {
     max-width: 720px;
   }
 }
-
-.header {
-  padding: 0 0.625rem;
-  margin-bottom: 1.875rem;
-}
-
-.description {
-  font-style: italic;
-  font-weight: 200;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
-}
-
-.clue {
-  margin-left: 0.25rem;
-  font-size: 0.9rem;
-  color: #e4e4e4;
-}
-
-.text-center {
-  text-align: center;
-}
-
-/* form */
-
-form {
-  background: var(--color-darkblue-alpha);
-  padding: 2.5rem 0.625rem;
-  border-radius: 0.25rem;
-}
-
